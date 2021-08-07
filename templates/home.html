@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/adith/Desktop/intervw/frontendtst.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <style>
+    div {
+      border: solid black;
+      position: absolute;
+    }
+    </style>
+    </head><body>
+<h1>Cloud Project</h1>
+<h3>Message digest using md5 algorithm</h3>
+<form action="/external" method="post"> 
+  <label for="input">Input</label>
+  <input type="text" name="pinput"><br><br><br>
+  <label for="output">Output</label><br>
+ <div>{{data}}</div><br><br>
+  {{data_external}} 
+  <br><br>
+  
+  {% csrf_token %}
+  
+  <input type="submit" id="sub" value="Submit">
+</form>
+
+
+</body></html>
